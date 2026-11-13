@@ -69,7 +69,9 @@ def get_player_data(player_name):
     return _clean_data(data_list, dobs[clean_name])
 
 def plot_player_data(df):
-    """Takes a dataframe and generates a scatterplot."""
+    """
+	Takes a dataframe and generates a scatterplot.
+	"""
     fig, ax = plt.subplots(figsize=(13, 7))
     
     sns.scatterplot(data=df, x="player_age", y="age_diff", hue="result", 
